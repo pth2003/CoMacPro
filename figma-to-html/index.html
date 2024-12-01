@@ -1,0 +1,2178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <header class="my-2">
+      <nav class="navbar">
+        <div class="container">
+          <div class="justify-content-center d-none logo-lg">
+            <a href="#" class="navbar-brand">
+              <img src="./assets/image/logo-pc.png" alt="Logo" />
+            </a>
+            <ul class="nav">
+              <li class="nav-item"><a href="#" class="nav-link">Bán</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Cho thuê</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Danh mục</a>
+              </li>
+              <li class="nav-item"><a href="#" class="nav-link">Blogs</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Về chúng tôi</a>
+              </li>
+            </ul>
+          </div>
+          <div class="logo">
+            <img src="./assets/image/Frame 427318179.png" alt="" />
+          </div>
+          <form>
+            <button class="btn btn-outline-primary mx-3">Đăng ký</button>
+            <button class="btn btn-primary">Đăng nhập</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <!-- Banner section -->
+    <section class="banner-section">
+      <div class="container position-relative">
+        <div class="row g-0 align-items-center slide">
+          <!-- Cột nội dung văn bản -->
+          <div class="col-6 col-lg-6 px-5">
+            <h1 class="fw-bold mb-3">
+              Nền tảng cho thuê B2B lớn nhất Việt Nam
+            </h1>
+            <p class="mb-4 fs-5">
+              Tìm kiếm, so sánh và thuê hàng nghìn thiết bị thuộc hàng trăm danh
+              mục chỉ trong vài cú nhấp chuột
+            </p>
+          </div>
+
+          <!-- Cột hình ảnh -->
+          <div class="col-6 col-lg-6 text-center">
+            <div class="banner-image w-100">
+              <img
+                src="./assets/image/banner-img.svg"
+                alt="Excavator"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row slide-sm">
+          <div class="col">
+            <div class="card">
+              <img
+                src="./assets/image/Group 52.png"
+                alt=""
+                class="card-img-top"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-0 filter">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Bán</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Cho thuê</a>
+            </li>
+            <li class="nav-item hide">
+              <a class="nav-link disabled" aria-disabled="true">Hoặc</a>
+            </li>
+            <li class="nav-item hide">
+              <a href="#" class="nav-link nav-send">Gửi yêu cầu của bạn</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <form class="form-inline row d-flex align-items-center px-4">
+              <div class="col-md-3 filter-item position-relative">
+                <div class="d-flex align-items-center">
+                  <!-- icon -->
+                  <img
+                    src="./assets/image/search-normal.png"
+                    alt="Search Icon"
+                    style="max-width: 24px; height: auto"
+                  />
+                  <div>
+                    <label for="category" class="form-label mb-1 px-2 fw-bold"
+                      >Danh mục</label
+                    >
+                    <input
+                      type="text"
+                      id="category"
+                      class="form-control no-outline"
+                      placeholder="Bạn cần tìm gì?"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 filter-item position-relative">
+                <div class="d-flex align-items-center gap-2">
+                  <!-- icon -->
+                  <img
+                    src="./assets/image/verify.svg"
+                    alt="Search Icon"
+                    style="max-width: 24px; height: auto"
+                  />
+                  <div>
+                    <label for="status" class="form-label mb-1 px-2 fw-bold"
+                      >Tình trạng</label
+                    >
+                    <select id="status" class="form-select no-outline">
+                      <option selected>Tất cả tình trạng</option>
+                      <option>Mới</option>
+                      <option>Đã sử dụng</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 filter-item position-relative last-child">
+                <div class="d-flex align-items-center gap-2">
+                  <!-- icon -->
+                  <img
+                    src="./assets/image/location.png"
+                    alt="Search Icon"
+                    style="max-width: 24px; height: auto"
+                  />
+                  <div>
+                    <label for="status" class="form-label mb-1 px-2 fw-bold"
+                      >Khu vực</label
+                    >
+                    <select id="location" class="form-select no-outline">
+                      <option selected>Chọn vị trí</option>
+                      <option>Hà Nội</option>
+                      <option>TP.HCM</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="col-md-1"></div> -->
+              <div class="col-md-2 offset-md-1 text-end">
+                <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- catalog  -->
+    <section class="product-catalog">
+      <div class="container mt-4">
+        <h2>Danh mục thiết bị mới và đã qua sử dụng</h2>
+        <div class="list-group list-group-horizontal gap-4">
+          <button type="button" class="list-group-item active">
+            Earth Moving
+          </button>
+          <button type="button" class="list-group-item">
+            Lifting Equipment
+          </button>
+          <button type="button" class="list-group-item">Earth Moving</button>
+          <button type="button" class="list-group-item">
+            Lifting Equipment
+          </button>
+          <button type="button" class="list-group-item">Earth Moving</button>
+          <button type="button" class="list-group-item">
+            Lifting Equipment
+          </button>
+        </div>
+        <div class="category-list mt-4">
+          <div class="row g-0">
+            <div class="col-custom">
+              <div class="card text-center h-100 px-3 py-4 main-product">
+                <h4 class="card-title">Earth Moving</h4>
+                <img
+                  src="./assets/image/image 4.png"
+                  class="card-img-bottom py-3"
+                  alt="Excavator 1"
+                />
+                <div class="card-body">
+                  <a class="btn btn-outline-secondary px-5">Xem tất cả</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-list position-relative">
+              <div class="row h-100 g-0">
+                <div class="col-md-3 product-item active">
+                  <div class="card h-100 text-center px-3 py-5">
+                    <div class="">
+                      <h4 class="card-title">Excavator 1</h4>
+                    </div>
+                    <img
+                      src="./assets/image/123 1.png"
+                      class="card-img-bottom py-1"
+                      alt="Excavator 1"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3 product-item">
+                  <div class="card h-100 text-center px-3 py-5">
+                    <div class="">
+                      <h4 class="card-title">Excavator 1</h4>
+                    </div>
+                    <img
+                      src="./assets/image/123 1.png"
+                      class="card-img-bottom py-1"
+                      alt="Excavator 1"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3 product-item">
+                  <div class="card h-100 text-center px-3 py-5">
+                    <div class="">
+                      <h4 class="card-title">Excavator 1</h4>
+                    </div>
+                    <img
+                      src="./assets/image/123 1.png"
+                      class="card-img-bottom py-1"
+                      alt="Excavator 1"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3 product-item">
+                  <div class="card h-100 text-center px-3 py-5">
+                    <div class="">
+                      <h4 class="card-title">Excavator 1</h4>
+                    </div>
+                    <img
+                      src="./assets/image/123 1.png"
+                      class="card-img-bottom py-1"
+                      alt="Excavator 1"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3 product-item active">
+                  <div class="card h-100 text-center px-3 py-5">
+                    <div class="">
+                      <h4 class="card-title">Excavator 5</h4>
+                    </div>
+                    <img
+                      src="./assets/image/123 1.png"
+                      class="card-img-bottom py-1"
+                      alt="Excavator 1"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3 product-item">
+                  <div class="card h-100 text-center px-3 py-5">
+                    <div class="">
+                      <h4 class="card-title">Excavator 6</h4>
+                    </div>
+                    <img
+                      src="./assets/image/123 1.png"
+                      class="card-img-bottom py-1"
+                      alt="Excavator 1"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3 product-item">
+                  <div class="card h-100 text-center px-3 py-5">
+                    <div class="">
+                      <h4 class="card-title">Excavator 7</h4>
+                    </div>
+                    <img
+                      src="./assets/image/123 1.png"
+                      class="card-img-bottom py-1"
+                      alt="Excavator 1"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3 product-item">
+                  <div class="card h-100 text-center px-3 py-5">
+                    <div class="">
+                      <h4 class="card-title">Excavator 8</h4>
+                    </div>
+                    <img
+                      src="./assets/image/123 1.png"
+                      class="card-img-bottom py-1"
+                      alt="Excavator 1"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="carousel-controls d-flex justify-content-between position-absolute"
+              >
+                <button class="btn btn-prev" onclick="prevProduct()">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="btn btn-next" onclick="nextProduct()">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- product list  -->
+    <section>
+      <div class="container mt-5">
+        <div
+          class="d-flex position-relative justify-content-between align-items-center"
+        >
+          <h2 class="product-heading fw-bold d-flex align-items-center">
+            Máy cẩu
+          </h2>
+
+          <div
+            class="carousel-controls position-absolute top-0 end-0 d-flex gap-4 align-items-center"
+          >
+            <div class="d-flex gap-3">
+              <button class="btn btn-prev" onclick="prevProduct()">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button class="btn btn-next" onclick="nextProduct()">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <a href="#" class="all-product">Xem tất cả</a>
+          </div>
+        </div>
+
+        <div class="product-list mt-3">
+          <div class="row row-cols-1 row-cols-md-5">
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mt-5">
+        <div
+          class="d-flex position-relative justify-content-between align-items-center"
+        >
+          <h2 class="product-heading fw-bold d-flex align-items-center">
+            Máy xúc
+          </h2>
+
+          <div
+            class="carousel-controls position-absolute top-0 end-0 d-flex gap-4 align-items-center"
+          >
+            <div class="d-flex gap-3">
+              <button class="btn btn-prev" onclick="prevProduct()">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button class="btn btn-next" onclick="nextProduct()">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <a href="#" class="all-product">Xem tất cả</a>
+          </div>
+        </div>
+
+        <div class="product-list mt-3">
+          <div class="row row-cols-1 row-cols-md-5">
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mt-5">
+        <div
+          class="d-flex position-relative justify-content-between align-items-center"
+        >
+          <h2 class="product-heading fw-bold d-flex align-items-center">
+            Xe nâng
+          </h2>
+
+          <div
+            class="carousel-controls position-absolute top-0 end-0 d-flex gap-4 align-items-center"
+          >
+            <div class="d-flex gap-3">
+              <button class="btn btn-prev" onclick="prevProduct()">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button class="btn btn-next" onclick="nextProduct()">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <a href="#" class="all-product">Xem tất cả</a>
+          </div>
+        </div>
+
+        <div class="product-list mt-3">
+          <div class="row row-cols-1 row-cols-md-5">
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mt-5">
+        <div
+          class="d-flex position-relative justify-content-between align-items-center"
+        >
+          <h2 class="product-heading fw-bold d-flex align-items-center">
+            Máy phát điện
+          </h2>
+
+          <div
+            class="carousel-controls position-absolute top-0 end-0 d-flex gap-4 align-items-center"
+          >
+            <div class="d-flex gap-3">
+              <button class="btn btn-prev" onclick="prevProduct()">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button class="btn btn-next" onclick="nextProduct()">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <a href="#" class="all-product">Xem tất cả</a>
+          </div>
+        </div>
+
+        <div class="product-list mt-3">
+          <div class="row row-cols-1 row-cols-md-5">
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card position-relative">
+                <img
+                  src="./assets/image/product.png"
+                  alt="product"
+                  class="card-img-top"
+                />
+                <div class="verify-icon position-absolute">
+                  <img src="./assets/image/shield-tick.png" alt="" />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title fw-bold">
+                    2021 Spider 15.75 Pro Platform Basket Spider Lift
+                  </h6>
+                  <div class="rated">
+                    <img src="./assets/image/Star 1.svg" alt="" />
+                    <span><span class="score">4.2</span>/5</span>
+                  </div>
+                  <div class="card-text">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Nhãn hiệu</span>
+                      <span>Platform Basket</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Model</span>
+                      <span>Spider 15.75 Pro</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span>Năm sản xuất </span>
+                      <span>2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /day</small
+                  >
+                  <small class="text-small-secondary"
+                    ><span class="price">S$2000</span> /week</small
+                  >
+                  <br />
+                  <small class="text-small-secondary"
+                    ><span class="price">S$7000</span> /month</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- service section  -->
+    <section class="service">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-4">
+            <h2 class="service__title">Tại sao chọn chúng tôi?</h2>
+            <p class="service__desc">4 giá trị chính của nền tảng cho thuê</p>
+            <ul class="service__benefits">
+              <li class="service__benefit-item tex-lg fw-bold">Giá tốt nhất</li>
+              <li class="service__benefit-item tex-lg fw-bold">
+                Linh hoạt về thời gian
+              </li>
+              <li class="service__benefit-item tex-lg fw-bold">
+                Nhanh chóng & Dễ dàng
+              </li>
+              <li class="service__benefit-item tex-lg fw-bold">
+                Minh bạch & bảo mật
+              </li>
+            </ul>
+            <button class="btn btn-primary">Thuê ngay</button>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col col-lg-7">
+            <div class="row row-cols-1 row-cols-lg-2 g-4 list-col">
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-icon mt-4 ms-3">
+                    <img src="./assets/image/wallet.png" alt="Wallet Icon" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Giá tốt nhất</h5>
+                    <p class="card-text">
+                      No more expensive prices! We help you discover the best
+                      market rates throughout Vietnam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-icon mt-4 ms-3">
+                    <img src="./assets/image/arrow.png" alt=" Icon" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Flexible Duration</h5>
+                    <p class="card-text">
+                      Rent your equipment for as short as one day for up to
+                      months according to your needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-icon mt-4 ms-3">
+                    <img src="./assets/image/truck-fast.png" alt=" Icon" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Nhanh chóng & Dễ dàng</h5>
+                    <p class="card-text">
+                      No more sourcing and negotiating! We help you source and
+                      compare quotes within a few clicks.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-icon mt-4 ms-3">
+                    <img src="./assets/image/shield-tick.png" alt=" Icon" />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Minh bạch & Bảo mật</h5>
+                    <p class="card-text">
+                      Have information of all available equipment at one glance
+                      from well- vetted suppliers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--ad section  -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="row row-cols-3 row-cols-md-4 g-4">
+              <div class="col">
+                <div class="card card-rounded">
+                  <img src="./assets/image/image 5.png" alt="" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-rounded">
+                  <img src="./assets/image/image 5.png" alt="" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-rounded">
+                  <img src="./assets/image/image 5.png" alt="" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-rounded">
+                  <img src="./assets/image/image 5.png" alt="" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-rounded">
+                  <img src="./assets/image/image 5.png" alt="" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-rounded">
+                  <img src="./assets/image/image 5.png" alt="" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-rounded">
+                  <img src="./assets/image/image 5.png" alt="" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card-rounded">
+                  <img src="./assets/image/image 5.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5">
+            <h2>
+              Chúng tôi bảo hiểm cho <br />
+              thiết bị thuê
+            </h2>
+            <p class="sub-title">
+              Hợp tác với HongLeong Assurance, thiết bị thuê từ ComacPro được
+              cung cấp bảo hiểm miễn phí trị giá 300 triệu đồng.
+            </p>
+            <button class="btn btn-primary">Xem chi tiết</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--step section  -->
+    <section class="mt-5 step-section">
+      <div class="container">
+        <h2>Thuê thiết bị chỉ trong vài cú nhấp chuột</h2>
+        <p>
+          Chúng tôi cố gắng tạo ra trải nghiệm cho thuê nhanh chóng và liền mạch
+        </p>
+        <div class="row">
+          <div class="col col-md-4">
+            <div class="card px-4 py-4">
+              <h3 class="card-title mt-5">Tìm kiếm</h3>
+              <div class="card-text">
+                Tìm kiếm thiết bị theo chủng loại, công suất mọi lúc, mọi nơi.
+              </div>
+              <img src="./assets/image/Frame 68 1.png" alt="" class="" />
+            </div>
+          </div>
+          <div class="col col-md-4">
+            <div class="card px-4 py-4">
+              <h3 class="card-title mt-5">So sánh</h3>
+              <div class="card-text">
+                So sánh các thiết bị có sẵn, mức giá và thông số kỹ thuật.
+              </div>
+              <img src="./assets/image/Frame 68 1.png" alt="" class="" />
+            </div>
+          </div>
+          <div class="col col-md-4">
+            <div class="card px-4 py-4">
+              <h3 class="card-title mt-5">Thuê ngay</h3>
+              <div class="card-text">
+                Đặt trước thiết bị và xác nhận đơn hàng bằng cách thanh toán.
+              </div>
+              <img src="./assets/image/Frame 68 1.png" alt="" class="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- more section -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>
+              Kiếm thêm thu nhập với <br />
+              thiết bị nhàn rỗi của bạn
+            </h2>
+          </div>
+          <div class="col offset-md-2 col-md-6">
+            <p>
+              Thay vì để thiết bị của bạn không hoạt động, tại sao không để nó
+              kiếm tiền cho bạn? Đăng ký và cho thuê chúng chỉ trong vài cú nhấp
+              chuột với bảo hiểm mọi rủi ro trị giá 300 triệu miễn phí tại
+              ComacPro.com!
+            </p>
+            <button class="btn btn-primary">Đăng ký đối tác ngay</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- feedback section -->
+    <section class="mt-5 feedback-section">
+      <div class="container">
+        <h2>Khách hàng nói về chúng tôi</h2>
+        <p>
+          Share with us your feedback to serve you better on our Google Review
+        </p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card px-3 shadow">
+              <div
+                class="icon d-flex align-items-end justify-content-between mx-3"
+              >
+                <div class="quote">
+                  <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="star-list">
+                  <ul class="d-flex gap-1">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  We are committed to providing our customers with super
+                  exceptional service while offering our employees the best
+                  training and a working environment in which they can excel
+                  best of all place for more than a half century. This company
+                  focus has been in place for more than a half century. We are
+                  committed.
+                </p>
+                <h5 class="card-title">Tuấn Anh</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card px-3 shadow">
+              <div
+                class="icon d-flex align-items-end justify-content-between mx-3"
+              >
+                <div class="quote">
+                  <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="star-list">
+                  <ul class="d-flex gap-1">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  We are committed to providing our customers with super
+                  exceptional service while offering our employees the best
+                  training and a working environment in which they can excel
+                  best of all place for more than a half century. This company
+                  focus has been in place for more than a half century. We are
+                  committed.
+                </p>
+                <h5 class="card-title">Tuấn Anh</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card px-3 shadow">
+              <div
+                class="icon d-flex align-items-end justify-content-between mx-3"
+              >
+                <div class="quote">
+                  <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="star-list">
+                  <ul class="d-flex gap-1">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  We are committed to providing our customers with super
+                  exceptional service while offering our employees the best
+                  training and a working environment in which they can excel
+                  best of all place for more than a half century. This company
+                  focus has been in place for more than a half century. We are
+                  committed.
+                </p>
+                <h5 class="card-title">Tuấn Anh</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- discover section -->
+    <section class="mt-5">
+      <div class="container discover">
+        <div class="row">
+          <div class="col col-md-6 px-5 py-5">
+            <h2>
+              Khám phá hàng nghìn thiết bị <br />
+              thuộc hàng trăm danh mục
+            </h2>
+            <p>
+              Tất cả đều có sẵn, đã đăng ký và sẵn sàng cho thuê tại <br />
+              ComacPro.com
+            </p>
+            <button class="btn btn-secondary">Tìm hiểu ngay</button>
+          </div>
+          <div class="col-md-6 d-flex gap-4 justify-content-center">
+            <div class="d-flex flex-column gap-4 position-relative img-list-1">
+              <div class="img-box card-rounded">
+                <img src="./assets/image/discover-section-1.png" alt="" />
+              </div>
+              <div class="img-box card-rounded">
+                <img src="./assets/image/discover-section-2.png" alt="" />
+              </div>
+            </div>
+            <div class="d-flex flex-column gap-4 position-relative img-list-2">
+              <div class="img-box card-rounded">
+                <img src="./assets/image/discover-section-3.png" alt="" />
+              </div>
+              <div class="img-box card-rounded">
+                <img src="./assets/image/123 3.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQS section -->
+    <section class="mt-5">
+      <div class="container">
+        <div>
+          <h2>Các câu hỏi thường gặp</h2>
+          <button class="btn btn-primary">Xem thêm FAQS</button>
+        </div>
+        <p>Nếu bạn có thêm câu hỏi, hãy truy cập FAQS của chúng tôi</p>
+        <div class="row row-cols-1 row-cols-md-2 accordion" id="faqsAccordion">
+          <div class="col mt-3">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  01. What is Antbuildz.com?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#faqsAccordion"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Antbuildz.com is the first and largest online construction
+                    equipment rental platform in South East Asia. We make your
+                    equipment rentals Smarter, Faster, Easier, and Safer by
+                    streamlining the entire rental process into a few clicks.
+                    With the power of digitalization, we help construction
+                    equipment owners connect their underutilized equipment to
+                    all users across Singapore and Malaysia. You can refer to
+                    our quick User Guide
+                    <a href="#">here</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  02. How do I sign up and start renting on Antbuildz.com?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#faqsAccordion"
+              >
+                <div class="accordion-body">
+                  <p>
+                    To sign up and start renting on Antbuildz.com, follow these
+                    simple steps... (chi tiết trả lời).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  03. How do I start renting equipment on Antbuildz.com?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#faqsAccordion"
+              >
+                <div class="accordion-body">
+                  <p>
+                    To start renting equipment on Antbuildz.com, follow these
+                    steps... (chi tiết trả lời).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  04. What is the minimum rental duration?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#faqsAccordion"
+              >
+                <div class="accordion-body">
+                  <p>
+                    The minimum rental duration on Antbuildz.com is... (chi tiết
+                    trả lời).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-5 logo-section">
+      <div class="container">
+        <ul class="d-flex align-items-center justify-content-between p-0 m-0">
+          <li>
+            <img src="./assets/image/Link → ic-6.png.png " alt="" />
+          </li>
+          <li>
+            <img src="./assets/image/Link → ic-6.png.png " alt="" />
+          </li>
+          <li>
+            <img src="./assets/image/Link → ic-5.png.png " alt="" />
+          </li>
+
+          <li>
+            <img src="./assets/image/Link → tech.png.png " alt="" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="py-5">
+      <div class="container">
+        <section class="footer-link">
+          <div class="row row-cols-2 row-cols-lg-5">
+            <div class="col">
+              <img
+                src="./assets/image/CMP logo - horizon - white 1.png"
+                alt=""
+                class="logo-footer mb-3"
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                doloribus iste placeat aut eligendi sunt minus exercitationem
+                cum temporibus veritatis! Beatae quisquam sequi iusto laborum
+                laudantium! Soluta porro delectus ullam!
+              </p>
+            </div>
+
+            <div class="col">
+              <div class="mb-4">
+                <h5>Người dùng</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">FAQS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Hướng dẫn thuê</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Hướng dẫn mua</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mb-4">
+                <h5>Đối tác</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">FAQS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Trở thành đối tác</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Hướng dẫn bán</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <h5>Truy cập nhanh</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Đăng kí</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Về chúng tôi</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Sản phẩm</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Blogs</a></li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Bảo hiểm</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Điều kiện</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">FAQs</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <div class="mb-4">
+                <h5>Liên hệ</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempora aliquam dignissimos soluta nisi inventore
+                      excepturi impedit numquam deleniti
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mb-4">
+                <h5>Hotline</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">+65-8831 8705</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="h-50">
+                <h5>Mạng xã hội</h5>
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      ><i class="fa-brands fa-tiktok"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="h-50">
+                <h5>Email</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">info@comacpro.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <section class="py-3">
+      <div class="container">
+        <div class="row text-center">
+          <p class="p-0 m-0">© 2024 Company, Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

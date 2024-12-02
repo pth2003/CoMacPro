@@ -29,3 +29,54 @@ function prevProduct() {
 }
 
 updateDisplay();
+
+const productData = [
+  {
+    imgSrc: "./assets/image/product.png",
+    verifyIconSrc: "./assets/image/shield-tick.png",
+    title: "2021 Spider 15.75 Pro Platform Basket Spider Lift",
+    score: 4.2,
+    details: {
+      brand: "Platform Basket",
+      Model: "Spider 15.75 Pro",
+      year: 2021,
+    },
+    price: { day: "S$2000 /day", week: "S$2000 /week", month: "S$7000 /month" },
+  },
+  {
+    imgSrc: "./assets/image/product.png",
+    verifyIconSrc: "./assets/image/shield-tick.png",
+    title: "2021 Spider 15.75 Pro Platform Basket Spider Lift",
+    score: 4.2,
+    details: {
+      brand: "Platform Basket",
+      Model: "Spider 15.75 Pro",
+      year: 2021,
+    },
+    price: { day: "S$2000 /day", week: "S$2000 /week", month: "S$7000 /month" },
+  },
+  {
+    imgSrc: "./assets/image/product.png",
+    verifyIconSrc: "./assets/image/shield-tick.png",
+    title: "2021 Spider 15.75 Pro Platform Basket Spider Lift",
+    score: 4.2,
+    details: {
+      brand: "Platform Basket",
+      Model: "Spider 15.75 Pro",
+      year: 2021,
+    },
+    price: { day: "S$2000 /day", week: "S$2000 /week", month: "S$7000 /month" },
+  },
+  {
+    imgSrc: "./assets/image/product.png",
+    verifyIconSrc: "./assets/image/shield-tick.png",
+    title: "2021 Spider 15.75 Pro Platform Basket Spider Lift",
+    score: 4.2,
+    details: {
+      brand: "Platform Basket",
+      Model: "Spider 15.75 Pro",
+      year: 2021,
+    },
+    price: { day: "S$2000 /day", week: "S$2000 /week", month: "S$7000 /month" },
+  },
+];

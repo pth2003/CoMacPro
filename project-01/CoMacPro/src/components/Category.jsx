@@ -2,6 +2,7 @@ import { Container } from "@mui/material";
 import React from "react";
 import { Heading } from "./Heading";
 import { ListItem } from "./ListItem";
+import { ListProductCategory } from "./ListProductCategory";
 const listCategory = [
   "Earth Moving",
   "Lifting Equipment",
@@ -22,6 +23,7 @@ export const Category = () => {
     <Container maxWidth="xl" sx={{ py: 3 }}>
       <Heading content="Danh mục thiết bị mới và đã qua sử dụng" />
       <ListItem listCategory={listCategory} />
+      <ListProductCategory />
     </Container>
   );
 };

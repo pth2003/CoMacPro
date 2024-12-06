@@ -8,6 +8,7 @@ export const Heading = ({ content }) => {
       component="h2"
       sx={{
         fontWeight: "bold",
+        py: 3,
         "&::before": {
           content: '""',
           border: "5px solid #FFA21A",

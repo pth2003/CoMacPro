@@ -11,7 +11,14 @@ import "swiper/css/autoplay";
 import { Filter } from "./Filter";
 export const Banner = () => {
   return (
-    <Container maxWidth="xl" sx={{ position: "relative" }}>
+    <Container
+      maxWidth="xl"
+      sx={{
+        position: "relative",
+
+        overflow: "hidden",
+      }}
+    >
       <Swiper
         modules={[Pagination, A11y]}
         spaceBetween={50}

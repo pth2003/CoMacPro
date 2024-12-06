@@ -3,6 +3,7 @@ import React from "react";
 import { Heading } from "./Heading";
 import { ListItem } from "./ListItem";
 import { ListProductCategory } from "./ListProductCategory";
+import { ProductSwiper } from "./ProductSwiper";
 const listCategory = [
   "Earth Moving",
   "Lifting Equipment",

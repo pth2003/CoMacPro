@@ -13,7 +13,7 @@ const CustomGrid = ({ images }) => {
       size={{ xs: 0, md: 5 }}
       offset={{ md: 1 }}
       sx={{
-        display: "flex",
+        display: { xs: "none", md: "flex" },
         gap: "40px",
         flexWrap: "wrap",
       }}
@@ -68,8 +68,18 @@ export const FAQSection = () => {
         }}
       >
         <Grid container spacing={4}>
-          <Grid size={{ xs: 12, md: 6 }} sx={{ padding: "60px" }}>
-            <Typography variant="h3" component="h3">
+          <Grid
+            size={{ xs: 12, md: 6 }}
+            sx={{ padding: { xs: "40px 20px", md: "60px" } }}
+          >
+            <Typography
+              variant="h3"
+              component="h3"
+              sx={{
+                fontSize: { xs: "calc(1em + 1vw)", md: "inherit" },
+                fontWeight: "bold",
+              }}
+            >
               Khám phá hàng nghìn thiết bị thuộc hàng trăm danh mục.
             </Typography>
             <Typography my={2}>

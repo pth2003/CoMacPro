@@ -18,8 +18,13 @@ export const FeedbackSection = () => {
       <Typography>
         Share with us your feedback to serve you better on our Google Review
       </Typography>
-      <Grid container spacing={4} my={3}>
-        <Grid size={4}>
+      <Grid
+        container
+        spacing={4}
+        my={3}
+        sx={{ overflowX: "auto", flexWrap: "nowrap" }}
+      >
+        <Grid size={4} minWidth={"260px"}>
           <Card
             variant="outlined"
             sx={{ padding: "40px 30px", borderRadius: "30px" }}
@@ -52,7 +57,7 @@ export const FeedbackSection = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid size={4}>
+        <Grid size={4} minWidth={"260px"}>
           <Card
             variant="outlined"
             sx={{ padding: "40px 30px", borderRadius: "30px" }}
@@ -85,7 +90,7 @@ export const FeedbackSection = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid size={4}>
+        <Grid size={4} minWidth={"260px"}>
           <Card
             variant="outlined"
             sx={{ padding: "40px 30px", borderRadius: "30px" }}

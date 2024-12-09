@@ -43,7 +43,7 @@ export const ListProductCategory = () => {
       <Grid size={{ xs: 12, md: 12 / 5 }}>
         <Card
           sx={{
-            minHeight: "342px",
+            //minHeight: "342px",
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -59,7 +59,12 @@ export const ListProductCategory = () => {
           </CardContent>
           <CardMedia
             image={CategoryImg}
-            sx={{ height: "150px", width: "100%", my: 2 }}
+            sx={{
+              height: "150px",
+              width: "100%",
+              my: 2,
+              display: { xs: "none", md: "block" },
+            }}
           />
           <CardActions sx={{ mt: 2 }}>
             <Button
@@ -77,15 +82,23 @@ export const ListProductCategory = () => {
           </CardActions>
         </Card>
       </Grid>
-      {categoryData.map((item, index) => (
-        <Grid size={{ xs: 4, md: 12 / 5 }}>
-          <CardProductCategory
-            title={item.title}
-            img={item.img}
-            index={index}
-          />
-        </Grid>
-      ))}
+      <Grid
+        size={{ xs: 12, md: 12 - 12 / 5 }}
+        sx={{ display: "flex", flexWrap: "nowrap", overflowX: "auto" }}
+      >
+        {categoryData.map((item, index) => (
+          <Grid
+            size={{ xs: 8, md: 3 }}
+            sx={{ minWidth: { xs: "276px", md: 0 } }}
+          >
+            <CardProductCategory
+              title={item.title}
+              img={item.img}
+              index={index}
+            />
+          </Grid>
+        ))}
+      </Grid>
     </Grid>
   );
 };

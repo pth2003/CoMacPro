@@ -2,7 +2,6 @@ import { Box, Container } from "@mui/material";
 import React from "react";
 import { Slide } from "./Slide";
 import { Pagination, A11y } from "swiper/modules";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 

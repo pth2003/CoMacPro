@@ -70,9 +70,13 @@ export const ProductList = ({ heading }) => {
   return (
     <Container maxWidth="xl">
       <Heading content={heading} />
-      <Grid container spacing={2}>
+      <Grid
+        container
+        spacing={2}
+        sx={{ overflowX: "auto", flexWrap: "nowrap" }}
+      >
         {ProductData.map((product, index) => (
-          <Grid size={12 / 5}>
+          <Grid size={12 / 5} sx={{ minWidth: "260px" }}>
             <ProductCard product={product} index={index} />
           </Grid>
         ))}

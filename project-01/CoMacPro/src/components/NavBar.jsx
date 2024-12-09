@@ -9,7 +9,10 @@ import LogoMb from "../assets/image/Frame 427318179.png";
 const pages = ["Bán", "Cho Thuê", "Danh mục", "Blogs", "FAQ", "Về chúng tôi"];
 export const NavBar = () => {
   return (
-    <AppBar position="static" sx={{ backgroundColor: "unset" }}>
+    <AppBar
+      position="static"
+      sx={{ backgroundColor: "unset", boxShadow: "unset", my: "10px" }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
           <Box
@@ -37,11 +40,29 @@ export const NavBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Button
               variant="ounlined"
-              sx={{ mx: 2, color: "#FFA21A", outline: "1px solid #FFA21A" }}
+              sx={{
+                mx: 2,
+                color: "#FFA21A",
+                outline: "1px solid #FFA21A",
+                fontWeight: "bold",
+                padding: "9px 20px",
+                borderRadius: "10px",
+              }}
             >
               Đăng ký
             </Button>
-            <Button variant="contained">Đăng nhập</Button>
+            <Button
+              variant="contained"
+              sx={{
+                backgroundColor: "#FFA21A",
+                color: "#000",
+                fontWeight: "bold",
+                padding: "9px 20px",
+                borderRadius: "10px",
+              }}
+            >
+              Đăng nhập
+            </Button>
           </Box>
         </Toolbar>
       </Container>

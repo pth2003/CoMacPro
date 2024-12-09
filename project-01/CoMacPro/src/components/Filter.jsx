@@ -10,6 +10,7 @@ const CustomTab = styled(Tab)({
   color: "#000",
   textTransform: "none",
   padding: "9px 20px",
+  flex: 1,
   "& .MuiTabs-indicator": { backgroundColor: "#004d40" },
   "&.Mui-selected": {
     backgroundColor: "#FFA21A",
@@ -28,7 +29,7 @@ export const Filter = () => {
     <Box sx={{ position: "relative" }}>
       <Box
         sx={{
-          position: "absolute",
+          position: { xs: "unset", md: "absolute" },
           top: -48,
           zIndex: 2,
           display: "flex",
@@ -44,6 +45,7 @@ export const Filter = () => {
             alignItems: "center",
             ".MuiTabs-indicator": { position: "relative" },
             borderRadius: "10px 10px 0 0 ",
+            width: { xs: "100%", md: "unset" },
           }}
         >
           <CustomTab
@@ -58,7 +60,7 @@ export const Filter = () => {
           />
           <CustomTab label="Cho Thuê" value={1} />
         </Tabs>
-        <Box>
+        <Box sx={{ display: { xs: "none", md: "block" } }}>
           <Typography variant="p" component="span" sx={{ mx: "10px" }}>
             Hoặc
           </Typography>
@@ -81,6 +83,24 @@ export const Filter = () => {
         {value === 0 && <SellFilter />}
         {value === 1 && <div>Content for Item Two</div>}{" "}
         {value === 3 && <div>Content for Item Three</div>}{" "}
+      </Box>
+      <Box my={2} sx={{ display: { xs: "block", md: "none" } }}>
+        <Typography variant="p" component="span" sx={{ mx: "10px" }}>
+          Hoặc
+        </Typography>
+        <Button
+          variant="contained"
+          sx={{
+            backgroundColor: "#FFC900",
+            color: "#000",
+            borderRadius: "100px",
+            padding: "4px 14px",
+            fontSize: "14px",
+            textTransform: "none",
+          }}
+        >
+          Gửi yêu cầu của bạn
+        </Button>
       </Box>
     </Box>
   );

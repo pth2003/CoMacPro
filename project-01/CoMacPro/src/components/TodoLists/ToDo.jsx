@@ -6,8 +6,6 @@ import {
   DialogActions,
   DialogContent,
   DialogTitle,
-  FormControl,
-  List,
   TextField,
 } from "@mui/material";
 import React, { useState } from "react";
@@ -36,18 +34,24 @@ export const Todo = () => {
     setEditIndex(index);
     setIsEditing(true);
   };
-  const handleSaveEdit = () => {
-    const updatedTodoList = [...todoList];
-    updatedTodoList[editIndex] = value;
-    setTodoList(updatedTodoList);
-    setValue("");
-    setEditIndex(null);
-    setIsEditing(false);
-  };
   const handleDelete = (index) => {
     const updatedTodoList = todoList.filter((_, i) => i !== index);
     setTodoList(updatedTodoList);
   };
+  const handleSaveEdit = () => {
+    const updatedTodoList = [...todoList];
+    //updatedTodoList[editIndex] = value;
+    if (value.trim() !== "") {
+      updatedTodoList[editIndex] = value;
+      setTodoList(updatedTodoList);
+    } else {
+      handleDelete(editIndex);
+    }
+    setValue("");
+    setEditIndex(null);
+    setIsEditing(false);
+  };
+
   return (
     <Container>
       <Box

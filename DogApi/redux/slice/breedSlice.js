@@ -1,16 +1,26 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-export const breedsFetch = createAsyncThunk("breed/fetch", async () => {
-  const res = await fetch("https://dogapi.dog/api/v2/breeds", {
-    method: "GET",
-    headers: { "Content-Type": "application/json" },
-  });
-  if (!res.ok) {
-    throw new Error("API request failed");
+export const breedsFetch = createAsyncThunk(
+  "breed/fetch",
+  async (_, thunkAPI) => {
+    try {
+      const response = await fetch("https://dogapi.dog/api/v2/breeds/");
+      if (!response.ok) {
+        return thunkAPI.rejectWithValue({
+          status: response.status,
+          message: response.statusText,
+        });
+      }
+      const data = await response.json();
+      return data.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue({
+        status: "INTERNET_DISCONNECTED",
+        message: error.message,
+      });
+    }
   }
-  const obj = await res.json();
-  return obj.data;
-});
+);
 const breedSlice = createSlice({
   name: "breed",
   initialState: {
@@ -23,6 +33,7 @@ const breedSlice = createSlice({
     builder
       .addCase(breedsFetch.pending, (state) => {
         state.loading = true;
+        state.error = null;
       })
       .addCase(breedsFetch.fulfilled, (state, action) => {
         state.loading = false;
@@ -31,7 +42,7 @@ const breedSlice = createSlice({
       })
       .addCase(breedsFetch.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.payload;
+        state.error = action.payload.status;
       });
   },
 });

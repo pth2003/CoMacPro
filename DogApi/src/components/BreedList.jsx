@@ -9,7 +9,7 @@ function BreedList({ data, loading, error }) {
   return (
     <Grid container spacing={2}>
       {loading && <PageLoading />}
-      {error && <Typography>{error.message}</Typography>}
+
       {Array.isArray(data) &&
         data.map((dataItem) => (
           <Grid size={4} key={dataItem.id}>
